@@ -33,6 +33,11 @@ public class Pessoa {
         return nome;
     }
 
+    @Override
+    public String toString() {
+        return "Pessoa{" + "id=" + id + ", nome=" + nome + ", idade=" + idade + '}';
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -44,8 +49,5 @@ public class Pessoa {
     public void setIdade(int idade) {
         this.idade = idade;
     }
-    
-    
-    
-    
+   
 }
