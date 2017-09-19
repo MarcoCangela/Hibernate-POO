@@ -18,6 +18,9 @@ import org.hibernate.cfg.AnnotationConfiguration;
  * @author Marco Cangela Garujo
  */
 public class Teste {
+    
+    
+  
       public static void criar(ArrayList dados){
         SessionFactory sessioFactory =  new AnnotationConfiguration().configure().buildSessionFactory();
         Session sessao = sessioFactory.openSession();
