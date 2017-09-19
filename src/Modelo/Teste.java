@@ -19,16 +19,17 @@ public class Teste {
         Session sessao=sessionFactory.openSession();
         sessao.beginTransaction();
      
-        Pessoa chissico = new Pessoa();
-        chissico.setNome("Maluco");
-        chissico.setIdade(19);
+        Pessoa pessoaa = new Pessoa();
+        pessoaa.setNome("Maluco");
+        pessoaa.setIdade(19);
         
         Pessoa pessoa = new Pessoa();
-        chissico.setNome("Leonardo");
-        chissico.setIdade(20);
+        pessoa.setNome("Leonardo");
+        pessoa.setIdade(20);
         
-        sessao.save(chissico);
+        sessao.save(pessoaa);
         sessao.save(pessoa);
+        //sessao.getTransaction().commit();
         sessao.close();
         sessionFactory.close();
     }
